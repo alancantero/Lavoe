@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css"> 
+        body{ 
+        padding-top: 2em;
+        padding-left:2em;
+        background:skyblue;
+        }
+    
+        h1{
+             font-family: Verdana ;
+             font-size: 3em;
+        }
+        h2{
+            font-size: 2em;
+        }
+        
+        }
+       
+        #menu{
+            background-color:black;
+        }
+        #menu ul {
+            list-style:none;
+            margin:0;
+            padding: 0;
+        }
+        #menu ul li{ 
+            display: inline-block;
+        }
+    
+        #menu ul li a{
+            background-color: black;
+            color: white;
+            display:block;
+            padding:20px 20px;
+            text-decoration:none;
+    
+        }
+        #menu ul li a:hover{
+            background-color: grey;
+        }
+        </style>
+
+        <script type="text/javascript">
+        function enviar(){
+    var nombre = document.getElementById("nombre");
+
+    localStorage.setItem("nombre",nombre.value);
+
+    var email = document.getElementById("mail");
+
+    localStorage.setItem("email",email.value);
+    }
+    </script>
+
+        </head>
+           <header>
+            <div>
+                <a href="C:\Users\Laly\Desktop\Beltran\HTML\Practica\Integrador.html">
+                    <img src="C:\Users\Laly\Desktop\Beltran\HTML\Practica\Lavoe..svg" />
+                </a>
+            </div>
+            <hr>
+            <br>
+            <div id="menu">
+                <ul style="list-style-type:none;" id="navbar" class="navbar">
+                <li style="float:left;"><a href="C:\Users\Laly\Desktop\Beltran\HTML\Practica\Integrador.html "> Inicio</a> &nbsp &nbsp
+                <li style="float:left;"><a href=" C:\Users\Laly\Desktop\Beltran\HTML\Practica\Productos.html"> Productos </a> &nbsp &nbsp
+                <li style="float:left;"><a href=" C:\Users\Laly\Desktop\Beltran\HTML\Practica\Consultas.html "> Consultas </a>  &nbsp
+                <li style="float:left;"><a href=" C:\Users\Laly\Desktop\Beltran\HTML\Practica\Sobre nosotros.html "> Quienes Somos </a> &nbsp &nbsp
+                <li style="float:right;"><a href="C:\Users\Laly\Desktop\Beltran\HTML\Practica\Carrito.html "> Carrito </a>
+                </ul>
+             </div>
+            </header>
+        </br>
+    </br>
+    </br>
+<body>
+   <h2>Consultas </h2>
+   <label>Nombre: </label> <br>
+   <input type="text" placeholder=" " id="nombre" size="40"><br>
+   <label>E-mail:</label><br>
+   <input type="text" placeholder=" " id="mail" size="40"><br>
+   <label>Telefono:</label><br>
+   <input type="text" placeholder=" " id="tel" size="40"><br>
+   <label>Consulta:</label><br>
+   <textarea name="consulta" id="cons" rows="11" cols="42">
+   </textarea><br>
+   <br>
+   <input type="button" value="Enviar" onclick= "enviar()">
+    
+    
+</body>
+</html>
