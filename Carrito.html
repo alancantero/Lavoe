@@ -4,65 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style type="text/css"> 
-    body{ 
-    padding-top: 2em;
-    padding-left:2em;
-    background:skyblue;
-    }
-
-    h1{
-         font-family: Verdana ;
-         font-size: 3em;
-    }
-    h2{
-        font-size: 2em;
-    }
     
-    }
-   
-    #menu{
-        background-color:black;
-    }
-    #menu ul {
-        list-style:none;
-        margin:0;
-        padding: 0;
-    }
-    #menu ul li{ 
-        display: inline-block;
-    }
+    <link rel="stylesheet" href="C:\Users\Laly\Desktop\Beltran\HTML\Practica\estilo.css">
 
-    #menu ul li a{
-        background-color: black;
-        color: white;
-        display:block;
-        padding:20px 20px;
-        text-decoration:none;
-
-    }
-    #menu ul li a:hover{
-        background-color: grey;
-    
-    }
-    </style>
-
- <script type="text/javascript" >
-
-function guardar(){
-    var cantRB = document.getElementById("cantRB").value;
-    var cantRG = document.getElementById("cantRG").value;
-    var cantRM = document.getElementById("cantRM").value;
-    var cantRN = document.getElementById("cantRN").value;
-    
-document.getElementById("remeB").innerHTML =parseInt ("remeB" + cantRB);
-document.getElementById("remeG").innerHTML =parseInt ("remeG" + cantRG);
-document.getElementById("remeM").innerHTML =parseInt ("remeM" + cantRM);
-document.getElementById("remeN").innerHTML =parseInt ("remeN" + cantRN);
-
-
-}
-</script>
+    <script src="C:\Users\Laly\Desktop\Beltran\HTML\Practica\funciones.js" type="text/javascript"></script>
 
     
 </head>
@@ -97,10 +42,10 @@ Remera Basica Negra: <br>
 
 <h4>Completá el formulario con la informacion solicitada.</h4>
 <label>Direccion:</label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label>Localidad:</label> <br>
-   <input type="text" placeholder=" " id="direc" size="20"> &nbsp&nbsp <input type="text" placeholder=" " id="direc" size="20"><br>
+   <input type="text" placeholder=" " id="direc" size="20" required/> &nbsp&nbsp <input type="text" placeholder=" " id="local" size="20" required/><br>
    <label>E-mail:</label><br>
-   <input type="text" placeholder=" " id="mail" size="48"><br>
+   <input type="text" placeholder=" " id="mail" size="48" required/><br>
    <label>Telefono:</label><br>
-   <input type="text" placeholder=" " id="tel" size="48"><br>
+   <input type="number" placeholder=" " id="tel" size="48" required/><br>
    <br>
-   <input type="button" value="Realizar Compra" onclick= "guardar()">
+   <input type="button" value="Realizar Compra" onclick= "comprar()">
