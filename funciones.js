@@ -21,13 +21,6 @@ function cambiarImagen(){
 }
 }
 
-function guardar(){
-    var cantRB = document.getElementById("cantRB").value;
-    var cantRG = document.getElementById("cantRG").value;
-    var cantRM = document.getElementById("cantRM").value;
-    var cantRN = document.getElementById("cantRN").value;
-
-}
 
 function enviar(){
     var nombre = document.getElementById("nombre");
@@ -44,3 +37,9 @@ function enviar(){
         var inLocal = document.getElementById("local") ;
         var inMail = document.getElementById("mail");
         var inTel = document.getElementById("tel");
+        if (inDirec == null || inLocal == null || inMail == null || inTel == null){
+        alert("No completaste todos los campos")
+        }else
+        alert("tu compra fue exitosa!")
+    }
+
