@@ -37,9 +37,18 @@ function enviar(){
         var inLocal = document.getElementById("local") ;
         var inMail = document.getElementById("mail");
         var inTel = document.getElementById("tel");
-        if (inDirec == null || inLocal == null || inMail == null || inTel == null){
-        alert("No completaste todos los campos")
-        }else
         alert("tu compra fue exitosa!")
     }
 
+function agregar1(){
+    alert("Agregaste Remera Blanca a tu carrito") ;
+}
+function agregar2(){
+    alert("Agregaste Remera Gris a tu carrito") ;
+}
+function agregar3(){
+    alert("Agregaste Remera Melange a tu carrito") ;
+}
+function agregar4(){
+    alert("Agregaste Remera Negra a tu carrito") ;
+}
